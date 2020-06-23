@@ -1,0 +1,20 @@
+% Current file is content/00_LaTeX/variables/runVariables
+
+\ifthenelse{\boolean{durchgehendeFussnoten}}
+{
+	\usepackage{chngcntr}
+	\counterwithout{footnote}{chapter}
+}
+{}
+\ifthenelse{\boolean{abgabeVersion}}
+{
+	% Pakete Für Todo Notes
+	\usepackage[disable]{todonotes}
+	\setlength {\marginparwidth }{2cm}      % Abstand für Todo Notizen
+}
+{
+	% Pakete Für Todo Notes
+	\usepackage{todonotes}
+	\setlength {\marginparwidth }{2cm}      % Abstand für Todo Notizen
+}
+
